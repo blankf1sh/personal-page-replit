@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Blank Fish </title>
+<h2>Find out Fish's name</h2>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+<script type="text/javascript"> $(function() { $("#mybutton").click(function (event) { $.getJSON('/buttonFunction', { }, function(data) { }); return false; }); }); </script>
+<body>
+<input type="button" id="mybutton" value="My name is..." />
+</body>
+</html>
