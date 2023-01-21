@@ -11,5 +11,8 @@ def index():
 def input(name):
   return 'Hello'+name
 
+@app.route('/.well-known/nostr.json')
+def nostr():
+  return '{"names":{"nemo":"public key goes here"}}'
 
 app.run(host='0.0.0.0', port=81)
